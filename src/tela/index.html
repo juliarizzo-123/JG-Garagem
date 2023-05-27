@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JG Garagem</title>
+
+</head>
+<body>
+
+<style>
+    /* Estilos gerais */
+    html, body {
+        height: 100%;
+    }
+    body {
+
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        flex: 1;
+    }
+
+    header, main, footer {
+        padding: 20px;
+    }
+
+    header {
+
+        padding: 150px;
+        margin: 100px;
+        margin-top: 50px;
+    }
+
+    h1, h2 {
+        background-color: aqua;
+        margin-top: 0;
+    }
+
+     footer, header{
+        background-color: aqua;
+        text-decoration-color: black;
+    }
+
+    footer {
+
+        text-align: center;
+        flex-shrink: 0;
+    }
+    .content {
+        margin-bottom: 100px; /* Espaço para o footer */
+    }
+    .carros-container, .motos-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .carro, .moto {
+        width: 250px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    .carro img, .moto img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .carro h3, .moto h3 {
+        margin: 0;
+    }
+
+    .carro p, .moto p {
+        margin: 5px 0;
+    }
+
+
+</style>
+
+
+<header>
+    <h1> JG Garagem </h1>
+</header>
+<main>
+    <h2>Carros</h2>
+    <div class="carros-container">
+        <div class="carro">
+            <img src="images/carro1.jpg" alt="Carro 1">
+            <h3>Carro 1</h3>
+            <p>Ano: 2010</p>
+            <p>Preço: R$ 20.000,00</p>
+        </div>
+        <div class="carro">
+            <img src="images/carro2.jpg" alt="Carro 2">
+            <h3>Carro 2</h3>
+            <p>Ano: 2012</p>
+            <p>Preço: R$ 25.000,00</p>
+        </div>
+    </div>
+
+    <h2>Motos</h2>
+    <div class="motos-container">
+        <div class="moto">
+            <img src="images/moto1.jpg" alt="Moto 1">
+            <h3>Moto 1</h3>
+            <p>Ano: 2015</p>
+            <p>Preço: R$ 10.000,00</p>
+        </div>
+        <div class="moto">
+            <img src="images/moto2.jpg" alt="Moto 2">
+            <h3>Moto 2</h3>
+            <p>Ano: 2018</p>
+            <p>Preço: R$ 15.000,00</p>
+        </div>
+    </div>
+</main>
+
+
+<footer class="footer">
+    <p>Revenda de Veículos - Todos os direitos reservados</p>
+</footer>
+</body>
+</html>
